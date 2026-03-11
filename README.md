@@ -100,6 +100,7 @@ Docker (for containerization)
 1️⃣ Clone the repository
 git clone https://github.com/aniket9534/ai-carpool-compliance-cohort3-system.git
 cd ai-carpool-compliance-system
+
 2️⃣ Create virtual environment
 python -m venv venv
 
@@ -112,5 +113,6 @@ venv\Scripts\activate
 Mac / Linux
 
 source venv/bin/activate
+
 3️⃣ Install dependencies
 pip install -r requirements.txt
