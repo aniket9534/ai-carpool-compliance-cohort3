@@ -1,0 +1,97 @@
+
+# .gitignore
+# ============================================
+
+# ─────────────────────────────────────────
+# PYTHON
+# ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ─────────────────────────────────────────
+# VIRTUAL ENVIRONMENT
+# ─────────────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+
+# ─────────────────────────────────────────
+# AI MODEL WEIGHTS (too large for GitHub)
+# ─────────────────────────────────────────
+*.pt
+*.pth
+*.weights
+*.onnx
+*.engine
+data/models/*
+!data/models/.gitkeep
+
+# ─────────────────────────────────────────
+# DATABASE FILES
+# ─────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+carpool_compliance.db
+
+# ─────────────────────────────────────────
+# EVIDENCE & MEDIA (too large)
+# ─────────────────────────────────────────
+data/evidence/*
+!data/evidence/.gitkeep
+data/videos/*
+!data/videos/.gitkeep
+data/images/*
+!data/images/.gitkeep
+
+# ─────────────────────────────────────────
+# ENVIRONMENT VARIABLES (security!)
+# ─────────────────────────────────────────
+.env
+.env.local
+.env.production
+secrets.py
+
+# ─────────────────────────────────────────
+# LOGS
+# ─────────────────────────────────────────
+logs/*
+!logs/.gitkeep
+*.log
+
+# ─────────────────────────────────────────
+# IDE & EDITOR
+# ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────
+# TESTING
+# ─────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ─────────────────────────────────────────
+# JUPYTER NOTEBOOKS
+# ─────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─────────────────────────────────────────
+# DOCKER
+# ─────────────────────────────────────────
+.docker/
